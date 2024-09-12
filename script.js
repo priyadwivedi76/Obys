@@ -51,3 +51,9 @@ document.addEventListener("mousemove",function(dets){
         top:dets.y,
     })
 })
+
+Shery.makeMagnet(".nav-part2 h4" /* Element to target.*/, {
+    //Parameters are optional.
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
