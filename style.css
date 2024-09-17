@@ -131,17 +131,21 @@ html,body{
 .page1-text{
     width: 72%;
     margin-left: 27%;
+    height: fit-content;
+    overflow: hidden;
 }
 .number{
+    position: absolute;
+    left: 45vh;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: start;
+    overflow: hidden;
+    height: fit-content;
     gap:1.3vw;
 }
 .number h2{
-    position: relative;
-    top: 50px;
     font-size: 3vw;
     font-weight: 100;
     font-family: "silk serif";
@@ -152,9 +156,6 @@ html,body{
     font-weight: 400;
     text-transform: uppercase;
     line-height: 7vw;
-    position: relative;
-    left:100px;
-    bottom: 50px;
 }
 
 .page1-text:nth-child(2){

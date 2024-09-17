@@ -1,5 +1,5 @@
+var tl=gsap.timeline();
 function loadingAnimation(){
-    var tl=gsap.timeline();
     tl.from(".line h1",{
         y:150,
         stagger:0.26,
@@ -42,18 +42,26 @@ function loadingAnimation(){
     tl.to(".loader",{
         display:"none",
     });
+
+    tl.from(".page1-text h1",{
+        y:120,
+        stagger:0.2,
+    })
+    tl.from(".number h2",{
+        y:80,
+        stagger:0.1,
+    })
+}
+function mouseControl(){
+    document.addEventListener("mousemove",function(dets){
+        gsap.to(".cursor",{
+            left:dets.x,
+            top:dets.y,
+        })})
+    Shery.makeMagnet(".nav-part2 h4");
 }
 loadingAnimation();
+mouseControl();
 
-document.addEventListener("mousemove",function(dets){
-    gsap.to(".cursor",{
-        left:dets.x,
-        top:dets.y,
-    })
-})
 
-Shery.makeMagnet(".nav-part2 h4" /* Element to target.*/, {
-    //Parameters are optional.
-    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-    duration: 1,
-  });
+
