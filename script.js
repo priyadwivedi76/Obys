@@ -47,7 +47,7 @@ function loadingAnimation(){
     });
 
     tl.from("#page1-text1 h1,#page1-text2 h1,#page1-text3 h3,#page1-text4 h1",{
-        y:120,
+        y:140,
         stagger:0.2,
     })
     tl.from(".number h2",{
