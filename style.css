@@ -133,13 +133,13 @@ html,body{
     margin-left: 27%;
     height: fit-content;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 .number{
     position: absolute;
     left: 45vh;
     flex-wrap: wrap;
-    display: flex;
-    align-items: center;
     justify-content: start;
     overflow: hidden;
     height: fit-content;
@@ -157,8 +157,22 @@ html,body{
     text-transform: uppercase;
     line-height: 7vw;
 }
+.page1-text h3{
+    height: fit-content;
+    font-size: 7vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 7vw;
+    position: relative;
+    z-index: 99;
+}
 
 .page1-text:nth-child(2){
     margin-top: 15vh;
     /* text-align: center; */
+}
+.page1-text h3:hover{
+    -webkit-text-stroke:1px #fff;
+    color: transparent;
+    font-weight: 500;
 }

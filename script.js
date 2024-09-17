@@ -38,12 +38,15 @@ function loadingAnimation(){
         delay:0.7,
         duration:0.45,
     });
+    tl.from(".nav",{
+        opacity:0,
+    })
 
     tl.to(".loader",{
         display:"none",
     });
 
-    tl.from(".page1-text h1",{
+    tl.from("#page1-text1 h1,#page1-text2 h1,#page1-text3 h3,#page1-text4 h1",{
         y:120,
         stagger:0.2,
     })
