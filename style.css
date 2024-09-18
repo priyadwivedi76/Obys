@@ -308,11 +308,11 @@ body{
 .elem{
     white-space: nowrap;
     overflow-x: hidden;
-    margin-bottom: -1vw;
+    margin-bottom: -0.8vw;;
 }
 
 .elem h1{
-    font-size: 6vw;
+    font-size: 7vw;
     -webkit-text-stroke: 1px #fff;
     font-weight: 100;
     text-transform: uppercase;
@@ -320,7 +320,7 @@ body{
     display: inline-block;
     margin-right: 16px;
     animation-name: anime1; 
-    animation-duration:12s;
+    animation-duration:20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -337,11 +337,11 @@ body{
 .elem2{
     white-space: nowrap;
     overflow-x: hidden;
-    margin-bottom: -1vw;
+    margin-bottom: -0.8vw;
 }
 
 .elem2 h1{
-    font-size: 6vw;
+    font-size: 7vw;
     -webkit-text-stroke: 1px #fff;
     font-weight: 100;
     text-transform: uppercase;
@@ -349,7 +349,7 @@ body{
     display: inline-block;
     margin-right: 16px;
     animation-name: anime1;
-    animation-duration: 12s;
+    animation-duration:20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: reverse;
@@ -366,5 +366,54 @@ body{
     font-family: "silk-serif" ;
     color: transparent;
 }
+.footer{
+    height: 85vh; 
+    position: relative;
+    width: 100%;
+    padding-left: 30vw;
+    padding-right: 2vw;
+}
 
-
+.footer h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position:relative;
+}
+.footer h1::before{
+    content: "04";
+    position:absolute;
+    font-size: 5vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left:-12%
+}
+.footer .underline{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 3vw;
+}
+.footer-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right:15vw;
+    padding-top: 3vw;
+    margin-bottom: 5vw;
+}
+.footer-div h6{
+    font-size: 0.9vw;
+    margin-bottom: 2vw;
+}
+.box{
+    width: 20%;
+}
+.footer-div h5{
+    font-size: 1.4vw;
+    font-weight: 500;
+} 
+.footer>h5{
+    font-weight: 500;
+    font-size: 1vw;
+    padding-top: 1.4vw;
+}
