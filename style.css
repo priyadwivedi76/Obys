@@ -237,12 +237,12 @@ body{
     width: 100%;
     background-color: #372d2d;
     position: relative;
-    padding-top: 5vw;
+    padding: 7vw 0;
 }
 .page-content{
     position: relative;
     width: 72vw;
-    margin-left: 20%;
+    margin-left: 28%;
 }
 .page-content h1{
     font-size: 7vw;
@@ -250,7 +250,7 @@ body{
 }
 .page-content .underline{
     background-color: #fff;
-    height: 2px;
+    height: 1px;
     width: 100%;
     margin: 3vw 0vw;
 }
@@ -297,6 +297,74 @@ body{
 .page4-info-elem p{
     width: 50%;
     font-size: 0.8vw;
+}
+
+.page5{
+    height:100vh;
+    width:100%;
+    padding:5vw 0;
+}
+
+.elem{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -1vw;
+}
+
+.elem h1{
+    font-size: 6vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    color:transparent;
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: anime1; 
+    animation-duration:12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.elem2{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -1vw;
+}
+
+.elem2 h1{
+    font-size: 6vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    color:transparent;
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: anime1;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    transform: translateX(calc(-100% - 20px));
+}
+
+.elem span{
+    font-style: italic;
+    font-family: "silk-serif" ;
+    color: transparent;
+}
+.elem2 span{
+    font-style: italic;
+    font-family: "silk-serif" ;
+    color: transparent;
 }
 
 
