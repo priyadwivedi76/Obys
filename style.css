@@ -244,6 +244,14 @@ body{
     width: 72vw;
     margin-left: 28%;
 }
+.page-content::before{
+    content: "03";
+    position:absolute;
+    font-size: 5vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left:-12%
+}
 .page-content h1{
     font-size: 7vw;
     text-transform: uppercase;
