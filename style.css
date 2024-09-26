@@ -137,22 +137,12 @@ body{
     height: fit-content;
     overflow: hidden;
     display: flex;
+    position: relative;
+    left: 10vh;
+    bottom:6.5vh;
     align-items: center;
 }
-.number{
-    position: absolute;
-    left: 45vh;
-    flex-wrap: wrap;
-    justify-content: start;
-    overflow: hidden;
-    height: fit-content;
-    gap:1.3vw;
-}
-.number h2{
-    font-size: 3vw;
-    font-weight: 100;
-    font-family: "silk serif";
-}
+
 .page1-text h1{
     height: fit-content;
     font-size: 7vw;
@@ -187,7 +177,7 @@ body{
     width: 100%;
     background-color: #0B0B0B;
     position: relative;
-    padding-top: 20vh;
+    padding-top: 10vh;
 }
 .video-container{
     height: 66vh;
