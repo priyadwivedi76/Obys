@@ -81,6 +81,11 @@ function loadingAnimation(){
         y:140,
         stagger:0.2,
     })
+
+    tl.from("#page1-text1, .page2",{
+        opacity:0,
+    },"-=1.2");
+
     tl.from(".number h2",{
         y:80,
         stagger:0.1,
