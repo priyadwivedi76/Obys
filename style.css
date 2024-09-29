@@ -248,29 +248,59 @@ body{
     margin-top: 2vh;
 }
 .image-container{
-    background-color: red;
     padding: 1vw;
     position: relative;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start; 
     flex-wrap: wrap;
-    gap:10;
 }
 .img-div{
-    height: 33vw;
-    width: 24vw;
+    height: 38vw;
+    width: 27vw;
     position: relative;
     flex-shrink: 0;
     margin: 2vw;
     overflow: hidden;
-    background-color: blue;
 }
 .img-div img{
     height: 100%;
     width:100%;
     object-fit: cover;
     object-position: center;
+}
+.img-div:nth-child(1){
+    height: 30vw;
+    width: 25vw;
+}
+.page3-circle1{
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 23vh;
+    margin-left: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-circle1 svg{
+    height: 30%;
+}
+.page3-circle2{
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-circle2 svg{
+    height: 30%;
+    rotate: -45deg;
 }
 .page4{
     min-height: 100vh;
