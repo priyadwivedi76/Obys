@@ -279,6 +279,7 @@ body{
     border: 2px solid #fff;
     border-radius: 50%;
     display: flex;
+    position: relative;
     margin-top: 23vh;
     margin-left: 10vh;
     align-items: center;
@@ -293,6 +294,7 @@ body{
     width: 23vw;
     border: 2px solid #fff;
     border-radius: 50%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,6 +304,51 @@ body{
     height: 30%;
     rotate: -45deg;
 }
+
+.circle-in{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale:0;
+    transition: all ease 0.3s;
+    border-radius: 50%;
+}
+
+.circle-in p{
+    color:black;
+    width: 60%;
+    font-weight: 500;
+    font-size:0.95vw;
+    scale:0;
+    transition: all ease 0.3s;
+    transition-delay:0.3s;
+    opacity: 0;
+}
+
+.page3-circle1:hover .circle-in{
+    scale: 1;
+}
+
+.page3-circle1:hover p{
+    scale: 1;
+    opacity: 1;
+}
+
+.page3-circle2:hover .circle-in{
+    scale: 1;
+}
+
+.page3-circle2:hover p{
+    scale: 1;
+    opacity: 1;
+}
+
 .page4{
     min-height: 100vh;
     width: 100%;

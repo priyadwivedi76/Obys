@@ -91,19 +91,6 @@ function loadingAnimation(){
         stagger:0.1,
     })
 }
-function mouseControl(){
-    document.addEventListener("mousemove",function(dets){
-        gsap.to(".cursor",{
-            left:dets.x,
-            top:dets.y,
-        })})
-    Shery.makeMagnet(".nav-part2 h4");
-}
-
-locomotive();
-loadingAnimation();
-//mouseControl();
-
 function sheryAnimation(){
     Shery.imageEffect(".img-div",{
         style:5,
@@ -112,6 +99,10 @@ function sheryAnimation(){
     });
 }
 
+
+
+locomotive();
+loadingAnimation();
 sheryAnimation();
 
 
