@@ -159,7 +159,25 @@ function cursorAnimation(){
         flag=0;
         }
     });      
-    }
+}
+
+document.addEventListener("mousemove",function(dets){
+    gsap.to(".flag",{
+        x:dets.x,
+        y:dets.y,
+    })
+})
+
+document.querySelector("#page1-text3").addEventListener("mouseenter",function(){
+    gsap.to(".flag",{
+        opacity:1,
+    })
+})
+document.querySelector("#page1-text3").addEventListener("mouseleave",function(){
+    gsap.to(".flag",{
+        opacity:0,
+    })
+})
 cursorAnimation();
 locomotive();
 loadingAnimation();
