@@ -91,6 +91,8 @@ function loadingAnimation(){
         stagger:0.1,
     })
 }
+
+//gooey effect
 function sheryAnimation(){
     Shery.imageEffect(".img-div",{
         style:5,
@@ -99,8 +101,71 @@ function sheryAnimation(){
     });
 }
 
+function cursorAnimation(){
+    //mouse cursor all over the screen
+    Shery.mouseFollower({
+        skew:true,
+        ease:"cubic-bezier(0.23,1,0.328,1)",
+        duration:1,
+    });
+    Shery.makeMagnet(".nav-part2 h4");
+
+    //mouse animation in page2
+    var videoContainer=document.querySelector(".video-container");
+    var video=document.querySelector(".video-container video");
+    //mouse-enter
+    videoContainer.addEventListener("mouseenter",function(){
+        videoContainer.addEventListener("mousemove",function(dets){
+            gsap.to(".mousefollower",{
+                opacity:0,
+            })
+            gsap.to(".video-cursor",{
+                left:dets.x-570,
+                y:dets.y-300,
+            })
+        })
+    })
+    //mouse-leave
+    videoContainer.addEventListener("mouseleave",function(){
+        gsap.to(".mousefollower",{
+           opacity:1,
+        })
+        gsap.to(".video-cursor",{
+            left:"70%",
+            top:"-15%",
+        })
+    })
+
+    //pause-play the video
+    var flag=0;
+    videoContainer.addEventListener("click",function(){
+    if(flag==0){
+        //when flag is 0 play video after the click
+        video.play();
+        video.style.opacity = 1;
+        document.querySelector(".video-cursor").innerHTML=`<i class="ri-pause-large-line"></i>`
+        gsap.to(".video-cursor",{
+            scale:0.5,
+        })
+        flag=1;
+    }else{
+        //when flag is 1 pause video after the click
+        video.pause();
+        video.style.opacity = 0;
+        document.querySelector(".video-cursor").innerHTML=`<i class="ri-play-mini-fill"></i>`
+        gsap.to(".video-cursor",{
+            scale:1,
+        })
+        flag=0;
+        }
+    });
+        
+    }
 
 
+
+
+cursorAnimation();
 locomotive();
 loadingAnimation();
 sheryAnimation();
