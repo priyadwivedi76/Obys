@@ -1,9 +1,9 @@
 
-# ObSys Project Clone
+# Obys Project Clone
 
 ## Overview
 
-Welcome to the **ObSys Project Clone**! This project is a dynamic and interactive web experience that showcases various media types and fonts, all enhanced with stunning animations powered by **GSAP (GreenSock Animation Platform)**, **Locomotive Scroll**, and **ScrollTrigger**. It’s designed to demonstrate how modern web technologies can create engaging user interfaces and seamless scrolling effects, all while being fully responsive across devices.
+Welcome to the **Obys Project Clone**! This project is a dynamic and interactive web experience that showcases various media types and fonts, all enhanced with stunning animations powered by **GSAP (GreenSock Animation Platform)**, **Locomotive Scroll**, and **ScrollTrigger**. It’s designed to demonstrate how modern web technologies can create engaging user interfaces and seamless scrolling effects, all while being fully responsive across devices.
 
 ## Features
 
