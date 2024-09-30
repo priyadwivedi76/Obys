@@ -158,13 +158,8 @@ function cursorAnimation(){
         })
         flag=0;
         }
-    });
-        
+    });      
     }
-
-
-
-
 cursorAnimation();
 locomotive();
 loadingAnimation();
